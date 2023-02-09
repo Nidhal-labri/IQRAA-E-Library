@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> 
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title> IQRAA - SignIn </title>
+</head>
+<body> 
+    <!----nav bar ----------------------------->
+    <div class="navbar">
+        <a href="HOME.html"><div class="logo"> <img src="../pic//logo.png" width="100px" ></div></a>
+        <nav>
+            <ul>
+                <li><a href=""> عن الموقع </a></li>
+                <li><a href="FORM.html">   حسابك </a></li>
+                <li><a href=""> تواصل معنا </a></li>
+                <li><a href="LIBRARY.html"> المكتبة </a></li>
+                <li><a href="HOME.html">   الرئيسية </a></li>
+         </ul>
+        </nav>
+        <a id="logo" href="SHOP.html"><img src="../pic//shopping-cart.png" height="30" width="30" ></a>    </div>   
+        <!--------------formulaire Compte ----------->
+    <div class="accsub">
+        <div class="container">
+                <div class="col">
+                    <img src="../pic//Ebook-bro2.png" width="100%">
+                </div>
+                <div class="col">
+                    <div class="formulaire">
+                        <div class="formbtn">
+                            <span onclick="register()" >  إنشاء حساب جديد </span>
+                            <span onclick="login()" > تسجيل الدخول </span>
+                            <hr id="indicator" > 
+                        </div>
+
+                        <!--------Login Forum ------------>  
+                        <form action="exemple1.php" method="post" id="loginform">
+                            <input type="text" name="mail" placeholder="الإيميل">
+                            <input type="password" name="mdps" placeholder="كلمة المرور">
+                            <button type="submit" class="button" > تسجيل الدخول </button>
+                            <a> نسيت كلمة السر </a>
+                        </form>
+                        <!--------Registartion Forum ------------>  
+                        <form  action="exemple2.php" method="post" id="regform">
+                            <input type="text" name="full_name" placeholder="الاسم الكامل">
+                            <input type="text" name="username" placeholder="اسم المستخدم">
+                            <input type="text" name="mail" placeholder="الإيميل">
+                            <input type="password" name="mdps" placeholder="كلمة المرور">
+                            <button type="submit" class="button" > تسجيل الدخول </button>
+                        </form>
+
+                    </div>
+                </div>
+        </div>
+    </div>
+ <!--------the buttom of the page ------------>  
+ <div class="end">
+    <div class="container">
+        <div class="colon1">
+            <h2>حمل تطبيقنا الآن</h2>
+            <p>حمل تطبيقنا على الأيفون او الأندرويد مجانا</p>
+            <img src="../pic//store.png">
+        </div>
+        <div class="colone2">
+            <img src="../pic//logo.png" >
+            <p>
+               جميع الحقوق محفوظة لدى دور النشر والمؤلفين <br>
+               والمكتبة لا تنتهك حقوق النشر وحقوق التأليف والملكيّة <br>
+                والكتب المنشورة ملك لأصحابها أو ناشريها <br>
+                 ولا تعبّر عن وجهة نظر الموقع ، ونبذل قصار الجهد <br>
+                 .لمراجعة الكتب قبل نشرها  <br>
+                 للتبليغ عن كتاب محمي بحقوق نشر او مخالف للقوانين <br>
+                .و الأعراف فضلا اتصل بنا على الفور
+            </p>
+        </div>
+        <div class="colon3">
+            <h2> :روابط هامّة </h2>
+            <ul>
+                <li> اتصل بنا </li>
+                <li> سياسة الخصوصية </li>
+                <li> عن المكتبة </li>
+                <li> حقوق الملكية </li>
+            </ul>
+        </div>
+        <div class="colon4">
+            <h2> :تابعنا على </h3>
+            <ul>
+                <li> فايسبوك </li>
+                <li> انستغرام </li>
+                <li> تويتر </li>
+                <li> تلغرام </li>
+            </ul>
+        </div>
+        <hr>
+</div>
+<p class="copyrights">  جميع الحقوق محفوظة © 2023 </p>
+</div>
+
+<!--------------------- JAVASCRIPT Functions ------------->
+    <script>
+        var loginform=document.getElementById("loginform");
+        var regform=document.getElementById("regform");
+        var indicator=document.getElementById("indicator");
+        function register() {
+             regform.style.transform = "translateX(0px)";
+             loginform.style.transform = "translateX(0px)";
+             indicator.style.transform = "translateX(100px)";
+        }
+        function login() {
+             regform.style.transform = "translateX(300px)";
+             loginform.style.transform = "translateX(300px)";
+             indicator.style.transform = "translateX(0px)";
+        }
+    </script>
+    
+</body>
+</html>
